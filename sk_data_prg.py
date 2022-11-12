@@ -1,3 +1,4 @@
+
 import pandas as pd
 
 import numpy
@@ -23,4 +24,3 @@ for filename in os.scandir(directory):
 
         df1=df[['#Freq', 'Cp', 'G', 'E1', 'E2', 'Z1', 'Z2', 'M1', 'M2', 'tand']].copy()
 
-        df1.to_csv(r'C:/Users/ketan/OneDrive/Desktop/10.07.2015_5T\Cal_data2\mod_'+str(filename.name), index=None, sep='	', mode='w')
