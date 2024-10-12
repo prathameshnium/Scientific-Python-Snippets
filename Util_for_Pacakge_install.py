@@ -18,10 +18,10 @@ folder_selected = filedialog.askdirectory()
 files_list = list_files_with_extension(folder_selected)
 
 # Print the list of files
-print("Files in the selected folder:")
+print("Files in the selected folder:",folder_selected)
 for file in files_list:
     #pip install pythonpackage -f ./ -- no-index -- no-deps
-    print(f"pip install {file} -f ./ --no-index --no-deps")
+    print(f"pip install {folder_selected}/{file} -f ./ --no-index --no-deps")
 
 # Close the GUI window
 root.destroy()
