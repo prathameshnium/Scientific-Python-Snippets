@@ -1,3 +1,22 @@
+"""
+Interactive Matplotlib Scatter Plot for Data Point Selection.
+
+This script demonstrates how to create an interactive scatter plot using Matplotlib
+in a Jupyter Notebook or a similar environment supporting the '%matplotlib notebook'
+backend.
+
+Key Features:
+  - Displays a scatter plot with a real-time crosshair cursor.
+  - Allows the user to click anywhere on the plot.
+  - On each click, it captures the (x, y) coordinates.
+  - The coordinates of the last-clicked point are displayed in an annotation box.
+  - The coordinates of all clicked points are stored in a list and printed to the console.
+
+This provides a simple graphical method for manually selecting points or features
+from a dataset for further analysis. Note: The slider functionality is
+a placeholder and is not fully implemented in this version.
+"""
+
 
 %matplotlib notebook
 from ipywidgets import *
