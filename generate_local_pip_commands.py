@@ -1,3 +1,20 @@
+"""
+Local Python Package Installer Command Generator.
+
+This script provides a graphical user interface (GUI) for a user to select a
+folder containing local Python package files (e.g., .whl, .tar.gz).
+
+After a folder is selected, the script scans it for all files and generates a
+series of `pip install` commands. Each command is specifically formatted for
+offline installation, telling pip to look in the current directory for the
+package and to not search the online Python Package Index (PyPI) or install
+dependencies.
+
+The resulting commands are printed to the console, ready to be copied and
+pasted into a terminal to install all packages from the selected folder.
+"""
+
+
 import os
 from tkinter import filedialog
 from tkinter import Tk
