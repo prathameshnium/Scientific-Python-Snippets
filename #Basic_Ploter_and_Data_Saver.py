@@ -1,3 +1,14 @@
+#Basic_Ploter_and_Data_Saver
+
+"""
+IV Curve Simulator for a Linear Resistor.
+
+This script prompts the user for a current range, step size, and output
+filename. It then generates a simulated current-voltage (IV) dataset based on
+Ohm's Law (V = I * R) for a fixed resistor, plots the resulting IV curve,
+and saves the data to a tab-separated CSV file.
+"""
+
 import pandas as pd
 
 import numpy as np
