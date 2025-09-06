@@ -1,9 +1,9 @@
 Scientific-Python-Snippets
-(formaly mini-tests)
+(Formerly Mini-Tests)
 
 A curated collection of small, reusable Python scripts for common data handling, file manipulation, and automation tasks. This repository serves as a personal library of snippets and utilities, often incorporating simple graphical user interfaces (GUIs) with Tkinter for ease of use.
 
- Table of Contents
+Table of Contents
 Features
 
 Dependencies
@@ -12,7 +12,7 @@ Script Descriptions
 
 Usage
 
- Features
+Features
 This toolkit provides scripts to perform a variety of common tasks, including:
 
 GUI Interaction: File and folder selection dialogs using Tkinter.
@@ -27,14 +27,14 @@ Command Generation: Automating the creation of shell commands for programs like 
 
 Interactive Plotting: Selecting and annotating data points directly on a matplotlib graph.
 
- Dependencies
+Dependencies
 The scripts in this repository primarily rely on the following standard Python libraries. To run all scripts, ensure you have them installed:
 
 pip install pandas numpy matplotlib
 
 Note: tkinter is part of the standard Python library and typically does not require a separate installation.
 
- Script Descriptions
+Script Descriptions
 Here is a brief overview of each script included in this toolkit:
 
 Filename
@@ -51,7 +51,7 @@ Asks the user for a folder and generates a gnuplot command to plot data from all
 
 generate_local_pip_commands.py
 
-Asks the user for a folder and generates offline pip install commands for all package files found.
+Asks for a folder and generates offline pip install commands for all package files found.
 
 generate_squared_data.py
 
@@ -85,3 +85,14 @@ timestamped_filename_generator.py
 
 Runs an infinite loop that continuously prints unique, timestamped filenames to the console.
 
+Usage
+Clone the repository:
+
+git clone [https://github.com/prathameshnium/Scientific-Python-Snippets.git](https://github.com/prathameshnium/Scientific-Python-Snippets.git)
+cd Scientific-Python-Snippets
+
+Ensure dependencies are installed (see Dependencies section).
+
+Run a script: Execute any script from your terminal. Many of the scripts are interactive and will prompt you for input.
+
+python gui_file_lister.py
