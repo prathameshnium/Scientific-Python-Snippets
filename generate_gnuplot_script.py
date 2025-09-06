@@ -1,14 +1,20 @@
 # GNUploter util for kolkata data
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      ketan
-#
-# Created:     12-02-2025
-# Copyright:   (c) ketan 2025
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+
+"""
+Gnuplot Plotting Command Generator.
+
+This script provides a graphical user interface (GUI) for a user to select a
+folder containing scientific data files.
+
+After a folder is selected, the script scans it for all files and automatically
+constructs a complete gnuplot command. The generated command is designed to
+plot column 5 versus column 2 ('using 2:5') for every file in the directory,
+overlaying them all onto a single graph.
+
+The final command is printed to the console, ready to be copied and pasted
+directly into a gnuplot terminal for execution, saving significant time when
+visualizing large batches of data.
+"""
 
 import os
 from tkinter import filedialog
