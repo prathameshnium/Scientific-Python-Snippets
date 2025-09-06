@@ -1,0 +1,31 @@
+"""
+Continuous Generator for Timestamped Filenames.
+
+This script demonstrates how to create a continuous stream of unique filenames
+by appending the current date and time to a base name.
+
+It runs in an infinite loop, and every half-second it:
+  1. Fetches the current system time.
+  2. Formats it into a "YYYYMMDD_HHMMSS" string.
+  3. Combines it with a base filename (e.g., "ABC").
+  4. Prints the resulting unique filename (e.g., "ABC_20250906_222905.csv")
+     to the console.
+
+This pattern is commonly used in data acquisition and logging applications to
+ensure that each new data file is saved with a unique name, preventing
+accidental overwrites.
+
+NOTE: This script will run forever until manually stopped (e.g., by pressing Ctrl+C
+in the terminal).
+"""
+
+from datetime import datetime
+import time
+
+base_filename = 'ABC'
+# Create a unique filename
+while True:
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    unique_filename = f"{base_filename}_{timestamp}.csv"
+    print(unique_filename)
+    time.sleep(0.5)  # Delay for 0.5 seconds
